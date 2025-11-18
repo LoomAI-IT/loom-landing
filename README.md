@@ -1,73 +1,126 @@
-# React + TypeScript + Vite
+# Loom Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современный, минималистичный B2B лендинг для AI-помощника Loom по созданию контента для социальных сетей.
 
-Currently, two official plugins are available:
+## Технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** - современная библиотека для создания пользовательских интерфейсов
+- **TypeScript** - типизированный JavaScript для надежного кода
+- **Vite** - быстрый сборщик и dev server
+- **Framer Motion** - библиотека для плавных анимаций
+- **CSS Modules** - изолированные стили компонентов
+- **Lucide React** - современная библиотека иконок
 
-## React Compiler
+## Структура проекта
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/
+│   ├── ui/                    # Переиспользуемые UI компоненты
+│   │   ├── Button.tsx
+│   │   ├── Container.tsx
+│   │   ├── Section.tsx
+│   │   ├── Card.tsx
+│   │   ├── Badge.tsx
+│   │   └── AnimatedSection.tsx
+│   └── sections/              # Секции лендинга
+│       ├── HeroSection.tsx
+│       ├── MicroJobsSection.tsx
+│       ├── TryNowSection.tsx
+│       ├── FeaturesSection.tsx
+│       └── FinalCTASection.tsx
+├── App.tsx                    # Главный компонент
+└── index.css                  # Глобальные стили и дизайн-система
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Особенности
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Дизайн-система
+- Современный минималистичный стиль
+- CSS переменные для единообразия
+- Адаптивная типографика
+- Subtle тени и плавные переходы
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Анимации
+- Scroll-triggered анимации с Framer Motion
+- Fade-in и slide-up эффекты
+- Stagger анимации для списков
+- Smooth transitions
+
+### Секции лендинга
+1. **Hero** - главный экран с value proposition
+2. **Micro Jobs** - 5 ключевых задач, которые решает продукт
+3. **Try Now** - интерактивный виджет-демо
+4. **Features** - 6 основных возможностей
+5. **Final CTA** - призыв к действию
+
+## Быстрый старт
+
+### Установка зависимостей
+```bash
+npm install
 ```
+
+### Запуск dev сервера
+```bash
+npm run dev
+```
+
+Откройте [http://localhost:5173](http://localhost:5173) в браузере.
+
+### Сборка для продакшна
+```bash
+npm run build
+```
+
+### Превью продакшн сборки
+```bash
+npm run preview
+```
+
+## Customization
+
+### Цветовая схема
+Измените CSS переменные в `src/index.css`:
+
+```css
+:root {
+  --color-primary: #0066ff;
+  --color-primary-hover: #0052cc;
+  --color-primary-light: #e6f0ff;
+  /* ... другие цвета */
+}
+```
+
+### Контент
+Обновите текст в компонентах секций в `src/components/sections/`
+
+### Добавление новых секций
+1. Создайте новый компонент в `src/components/sections/`
+2. Добавьте стили в CSS Module
+3. Импортируйте и используйте в `App.tsx`
+
+## Производительность
+
+- Lazy loading для секций ниже fold
+- Оптимизированные анимации (will-change, transform)
+- CSS Modules для code splitting
+- Минификация в продакшн сборке
+
+## Адаптивность
+
+- Mobile-first подход
+- Breakpoints: 640px, 768px, 1024px
+- Адаптивная типографика
+- Touch-friendly интерфейс
+
+## Браузерная совместимость
+
+- Chrome (последние 2 версии)
+- Firefox (последние 2 версии)
+- Safari (последние 2 версии)
+- Edge (последние 2 версии)
+
+## Лицензия
+
+MIT
