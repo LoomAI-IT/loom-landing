@@ -4,6 +4,7 @@ import {
     PainPointsSection,
     TryNowSection,
     FeaturesSection,
+    EcosystemSection,
     ObjectionsSection,
     TransformationSection,
     FinalCTASection,
@@ -19,6 +20,7 @@ function App() {
             <FeaturesSection/>
             <ObjectionsSection/>
             <TransformationSection/>
+            <EcosystemSection/>
             <FinalCTASection/>
         </main>
     );

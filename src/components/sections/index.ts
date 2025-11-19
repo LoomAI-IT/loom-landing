@@ -5,6 +5,7 @@
 
 export { HeroSection } from './Hero';
 export { FeaturesSection } from './Features';
+export { EcosystemSection } from './Ecosystem';
 export { TransformationSection } from './Benefits';
 export { MicroJobsSection } from './MicroJobs';
 export { PainPointsSection } from './PainPoints';

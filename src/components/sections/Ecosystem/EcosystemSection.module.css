@@ -1,0 +1,294 @@
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: var(--spacing-16);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--spacing-4);
+    box-shadow: var(--shadow-md);
+}
+
+.title {
+    font-size: var(--text-4xl);
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-4);
+}
+
+.subtitle {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Diagram */
+.diagram {
+    display: grid;
+    grid-template-columns: auto auto 2fr auto auto;
+    gap: var(--spacing-6);
+    align-items: center;
+    margin-top: var(--spacing-12);
+    position: relative;
+}
+
+/* Endpoints (Business & Clients) */
+.endpoint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition-base);
+}
+
+.circle:hover {
+    transform: scale(1.05);
+}
+
+.businessCircle {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.clientsCircle {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.endpointIcon {
+    width: 48px;
+    height: 48px;
+    color: white;
+}
+
+.endpointLabel {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+    text-align: center;
+}
+
+/* Arrows */
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowIcon {
+    width: 40px;
+    height: 40px;
+    color: var(--color-accent);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+/* Ecosystem wrapper */
+.ecosystemWrapper {
+    background: var(--color-bg);
+    border: 3px solid var(--color-accent);
+    border-radius: var(--radius-2xl);
+    padding: var(--spacing-6);
+    box-shadow: var(--shadow-lg);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.featureNode {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    background: var(--color-bg);
+    padding: var(--spacing-3);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.featureNode:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateX(4px);
+}
+
+.featureCircle {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-md);
+}
+
+/* Unique colors for each feature */
+.featureNode:nth-child(1) .featureCircle {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Purple */
+}
+
+.featureNode:nth-child(2) .featureCircle {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); /* Pink */
+}
+
+.featureNode:nth-child(3) .featureCircle {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); /* Blue */
+}
+
+.featureNode:nth-child(4) .featureCircle {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); /* Green */
+}
+
+.featureNode:nth-child(5) .featureCircle {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); /* Orange/Yellow */
+}
+
+.featureNode:nth-child(6) .featureCircle {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); /* Red/Orange */
+}
+
+.featureIcon {
+    width: 28px;
+    height: 28px;
+    color: white;
+}
+
+.featureInfo {
+    flex: 1;
+}
+
+.featureTitleRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-2);
+    margin-bottom: var(--spacing-1);
+}
+
+.featureTitle {
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    color: var(--color-text-primary);
+}
+
+.statusBadge {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--radius-md);
+    font-size: var(--text-xs);
+    font-weight: var(--font-semibold);
+    white-space: nowrap;
+}
+
+.statusReady {
+    background: var(--color-success);
+    color: white;
+}
+
+.statusSoon {
+    background: var(--color-primary);
+    color: white;
+}
+
+.statusPlanned {
+    background: var(--color-border);
+    color: var(--color-text-secondary);
+}
+
+.featureDescription {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .diagram {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-6);
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .endpointIcon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .title {
+        font-size: var(--text-3xl);
+    }
+
+    .subtitle {
+        font-size: var(--text-base);
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .endpointIcon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .featureNode {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .featureCircle {
+        width: 64px;
+        height: 64px;
+        min-width: 64px;
+    }
+
+    .featureIcon {
+        width: 32px;
+        height: 32px;
+    }
+}
