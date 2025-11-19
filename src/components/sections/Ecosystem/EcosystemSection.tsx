@@ -24,7 +24,7 @@ const ecosystemFeatures = [
     {
         icon: MessageSquare,
         title: 'Сбор обратной связи',
-        description: 'Мини-исследования с AI-анализом и выявлением возражений',
+        description: 'Мини-исследования с AI-анализом и выявлением точек роста',
         status: 'planned',
     },
     {

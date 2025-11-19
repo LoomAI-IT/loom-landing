@@ -25,7 +25,7 @@ export const HeroSection = () => {
                             transition={{duration: 0.5, delay: 0.1}}
                             className={styles.title}
                         >
-                            Поддерживайте активность и экспертность в соцсетях без рутины
+                            Поддерживайте активность и экспертность в соцсетях без рутины с Loom
                         </motion.h1>
 
                         <motion.p
