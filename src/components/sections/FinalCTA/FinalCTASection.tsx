@@ -18,15 +18,15 @@ export const FinalCTASection = () => {
                         Попробуйте бесплатно
                     </h2>
                     <p className={styles.subtitle}>
-                        Создайте 3 поста прямо сейчас — без регистрации, без карты. <br/>
-                        Убедитесь, что это работает для вашего бизнеса за 2 минуты
+                        Создайте публикацию прямо сейчас — без регистрации, без карты. <br/>
+                        Убедитесь, что это работает для вашего бизнеса за 5 минуты
                     </p>
-                    <Button size="lg" className={styles.button}>
+                    <Button size="lg" className={styles.button} onClick={() => window.open('https://t.me/loom_ai_content_bot', '_blank')}>
                         Создать первый пост бесплатно
                         <ArrowRight size={20}/>
                     </Button>
                     <p className={styles.note}>
-                        Не требуется кредитная карта • Результат за 60 секунд
+                        Не требуется кредитная карта • Результат за 5 минут
                     </p>
                 </motion.div>
             </Container>

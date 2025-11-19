@@ -48,7 +48,7 @@ export const HeroSection = () => {
                             transition={{duration: 0.5, delay: 0.3}}
                             className={styles.cta}
                         >
-                            <Button size="lg">
+                            <Button size="lg" onClick={() => window.open('https://t.me/loom_ai_content_bot', '_blank')}>
                                 Начать бесплатное внедрение Loom
                             </Button>
                             <Button size="lg" variant="ghost" onClick={scrollToTryNow}>

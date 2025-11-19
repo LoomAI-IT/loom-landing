@@ -18,7 +18,7 @@
 }
 
 .subtitle {
-    font-size: var(--text-xl);
+    font-size: var(--text-lg);
     line-height: var(--leading-relaxed);
     color: rgba(255, 255, 255, 0.9);
     max-width: 600px;
