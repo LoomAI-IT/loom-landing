@@ -203,15 +203,19 @@
     font-size: var(--text-base);
     font-weight: var(--font-semibold);
     color: var(--color-text-primary);
+    flex: 1;
+    text-align: left;
 }
 
 .statusBadge {
-    display: inline-block;
+    display: inline-flex;
     padding: var(--spacing-1) var(--spacing-2);
     border-radius: var(--radius-md);
     font-size: var(--text-xs);
     font-weight: var(--font-semibold);
     white-space: nowrap;
+    flex-shrink: 0;
+    margin-left: auto;
 }
 
 .statusReady {
@@ -305,6 +309,22 @@
     .featureNode {
         flex-direction: column;
         text-align: center;
+    }
+
+    .featureInfo {
+        width: 100%;
+    }
+
+    .featureTitleRow {
+        justify-content: space-between;
+    }
+
+    .featureTitle {
+        text-align: left;
+    }
+
+    .featureDescription {
+        text-align: left;
     }
 
     .featureCircle {
