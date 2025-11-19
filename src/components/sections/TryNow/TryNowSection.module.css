@@ -195,6 +195,16 @@
     font-size: var(--text-sm);
 }
 
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: var(--spacing-10);
+    }
+
+    .steps {
+        gap: var(--spacing-6);
+    }
+}
+
 @media (max-width: 640px) {
     .topics {
         flex-direction: column;
@@ -202,5 +212,60 @@
 
     .topicButton {
         width: 100%;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        margin-bottom: var(--spacing-8);
+    }
+
+    .result {
+        margin-top: var(--spacing-6);
+        padding-top: var(--spacing-6);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin-bottom: var(--spacing-6);
+    }
+
+    .title {
+        margin-bottom: var(--spacing-3);
+    }
+
+    .steps {
+        gap: var(--spacing-5);
+    }
+
+    .step {
+        gap: var(--spacing-3);
+    }
+
+    .stepNumber {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+        font-size: var(--text-xs);
+    }
+
+    .topicButton {
+        padding: var(--spacing-3) var(--spacing-4);
+    }
+
+    .textarea {
+        padding: var(--spacing-3);
+        font-size: var(--text-sm);
+    }
+
+    .resultContent {
+        padding: var(--spacing-4);
+    }
+
+    .resultImage {
+        height: 160px;
     }
 }

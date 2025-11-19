@@ -42,7 +42,35 @@
 }
 
 @media (max-width: 768px) {
+    .content {
+        gap: var(--spacing-5);
+    }
+
     .button {
         width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .content {
+        gap: var(--spacing-4);
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        gap: var(--spacing-4);
+    }
+
+    .subtitle {
+        font-size: var(--text-base);
+    }
+
+    .button {
+        margin-top: var(--spacing-3);
+    }
+
+    .button:hover {
+        transform: translateY(-1px);
     }
 }

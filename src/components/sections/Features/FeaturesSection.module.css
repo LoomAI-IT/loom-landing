@@ -54,5 +54,35 @@
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-5);
+    }
+
+    .header {
+        margin-bottom: var(--spacing-12);
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        margin-bottom: var(--spacing-10);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin-bottom: var(--spacing-8);
+    }
+
+    .grid {
+        gap: var(--spacing-4);
+    }
+
+    .iconWrapper {
+        width: 48px;
+        height: 48px;
+    }
+
+    .cardDescription {
+        font-size: var(--text-sm);
     }
 }

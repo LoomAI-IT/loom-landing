@@ -61,9 +61,47 @@
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-5);
     }
 
     .header {
         margin-bottom: var(--spacing-12);
+    }
+
+    .card:hover {
+        transform: translateY(-1px);
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        margin-bottom: var(--spacing-10);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin-bottom: var(--spacing-8);
+    }
+
+    .title {
+        margin-bottom: var(--spacing-3);
+    }
+
+    .grid {
+        gap: var(--spacing-4);
+    }
+
+    .iconWrapper {
+        width: 40px;
+        height: 40px;
+    }
+
+    .text {
+        font-size: var(--text-sm);
+    }
+
+    .card:hover {
+        transform: none;
     }
 }

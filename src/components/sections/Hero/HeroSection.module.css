@@ -232,6 +232,10 @@
 }
 
 @media (max-width: 768px) {
+    .content {
+        gap: var(--spacing-8);
+    }
+
     .cta {
         flex-direction: column;
         width: 100%;
@@ -244,9 +248,60 @@
     .stats {
         grid-template-columns: 1fr;
         gap: var(--spacing-6);
+        margin-top: var(--spacing-6);
+        padding-top: var(--spacing-6);
     }
 
     .mockupCard {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-5);
+    }
+
+    .stat:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .textContent {
+        gap: var(--spacing-4);
+    }
+
+    .subtitle {
+        font-size: var(--text-lg);
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-4);
+        margin-top: var(--spacing-5);
+        padding-top: var(--spacing-5);
+    }
+
+    .statValue {
+        font-size: var(--text-2xl);
+    }
+
+    .mockupBody {
+        padding: var(--spacing-4);
+    }
+
+    .mockupHeader {
+        padding: var(--spacing-4);
+    }
+
+    .mockupImage {
+        height: 140px;
+    }
+
+    .gradientBlob {
+        width: 300px;
+        height: 300px;
     }
 }

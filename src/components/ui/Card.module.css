@@ -53,4 +53,31 @@
     .padding-lg {
         padding: var(--spacing-6);
     }
+
+    .hover:hover {
+        transform: translateY(-2px);
+    }
+}
+
+@media (max-width: 480px) {
+    .padding-sm {
+        padding: var(--spacing-3);
+    }
+
+    .padding-md {
+        padding: var(--spacing-4);
+    }
+
+    .padding-lg {
+        padding: var(--spacing-5);
+    }
+
+    .hover:hover {
+        transform: none;
+    }
+
+    .hover:active {
+        transform: none;
+        opacity: 0.9;
+    }
 }

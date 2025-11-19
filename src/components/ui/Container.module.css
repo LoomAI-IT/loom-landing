@@ -18,9 +18,13 @@
     max-width: 1400px;
 }
 
-@media (max-width: 768px) {
-    .container {
-        padding-left: var(--spacing-4);
-        padding-right: var(--spacing-4);
+/* Responsive padding now handled by --container-padding in index.css */
+@media (max-width: 480px) {
+    .wide {
+        max-width: 100%;
+    }
+
+    .narrow {
+        max-width: 100%;
     }
 }

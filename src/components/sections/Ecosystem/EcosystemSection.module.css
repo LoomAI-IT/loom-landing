@@ -257,7 +257,33 @@
     }
 }
 
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: var(--spacing-12);
+    }
+
+    .diagram {
+        gap: var(--spacing-5);
+    }
+
+    .ecosystemWrapper {
+        padding: var(--spacing-5);
+    }
+
+    .features {
+        gap: var(--spacing-3);
+    }
+
+    .featureNode:hover {
+        transform: translateX(2px);
+    }
+}
+
 @media (max-width: 640px) {
+    .header {
+        margin-bottom: var(--spacing-10);
+    }
+
     .title {
         font-size: var(--text-3xl);
     }
@@ -290,5 +316,81 @@
     .featureIcon {
         width: 32px;
         height: 32px;
+    }
+
+    .ecosystemWrapper {
+        padding: var(--spacing-4);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        margin-bottom: var(--spacing-8);
+    }
+
+    .title {
+        margin-bottom: var(--spacing-3);
+    }
+
+    .diagram {
+        gap: var(--spacing-4);
+        margin-top: var(--spacing-8);
+    }
+
+    .circle {
+        width: 72px;
+        height: 72px;
+    }
+
+    .endpointIcon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .endpointLabel {
+        font-size: var(--text-base);
+    }
+
+    .arrowIcon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .ecosystemWrapper {
+        padding: var(--spacing-3);
+        border-width: 2px;
+    }
+
+    .featureNode {
+        padding: var(--spacing-2);
+        gap: var(--spacing-3);
+    }
+
+    .featureCircle {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+    }
+
+    .featureIcon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .featureTitle {
+        font-size: var(--text-sm);
+    }
+
+    .featureDescription {
+        font-size: var(--text-xs);
+    }
+
+    .featureNode:hover {
+        transform: none;
+    }
+
+    .statusBadge {
+        font-size: 0.625rem;
+        padding: 0.125rem var(--spacing-1);
     }
 }

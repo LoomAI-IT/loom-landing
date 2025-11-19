@@ -47,3 +47,20 @@
         padding-bottom: var(--spacing-20);
     }
 }
+
+@media (max-width: 480px) {
+    .sm {
+        padding-top: var(--spacing-10);
+        padding-bottom: var(--spacing-10);
+    }
+
+    .md {
+        padding-top: var(--spacing-12);
+        padding-bottom: var(--spacing-12);
+    }
+
+    .lg {
+        padding-top: var(--spacing-16);
+        padding-bottom: var(--spacing-16);
+    }
+}
