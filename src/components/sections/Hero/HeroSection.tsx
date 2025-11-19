@@ -30,7 +30,7 @@ export const HeroSection = () => {
                             transition={{duration: 0.5, delay: 0.1}}
                             className={styles.title}
                         >
-                            Поддерживайте активность и экспертность в соцсетях без рутины с Loom
+                            Поддерживайте активность и экспертность в соцсетях без рутины с L👀m
                         </motion.h1>
 
                         <motion.p

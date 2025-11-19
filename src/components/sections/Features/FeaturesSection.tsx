@@ -42,7 +42,7 @@ export const FeaturesSection = () => {
                 <SlideUp>
                     <div className={styles.header}>
                         <h2 className={styles.title}>
-                            Как Loom помогает создавать профессиональный контент?
+                            Как L👀m помогает создавать профессиональный контент?
                         </h2>
                     </div>
                 </SlideUp>
