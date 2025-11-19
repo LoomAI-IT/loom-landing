@@ -1,43 +1,45 @@
-import {ShieldCheck, Zap, DollarSign, Users, Repeat, TrendingUp} from 'lucide-react';
+import {Bot, Target, Shield, Users, Zap, TrendingUp} from 'lucide-react';
 import {Section, Container, Card, SlideUp, StaggerContainer, StaggerItem} from '../../ui';
 import styles from './ObjectionsSection.module.css';
 
 const objections = [
+    // Блок 1: Реальные сомнения
     {
-        type: 'barrier',
-        icon: ShieldCheck,
-        title: '"AI — это сложно"',
-        answer: 'Проще Instagram Stories: выбрал рубрику → написал → готово',
+        type: 'concern',
+        icon: Bot,
+        title: '"Это будет звучать роботно и шаблонно"',
+        answer: 'AI адаптируется под ваш стиль ещё при создании рубрики. Также можете сказать "добавь экспертности" или "сделай проще" — контент меняется под запрос. Каждый пост уникален',
     },
     {
-        type: 'barrier',
-        icon: Zap,
-        title: '"Роботный контент"',
-        answer: 'Скажите "добавь эмоций" — AI адаптируется под ваш стиль',
+        type: 'concern',
+        icon: Target,
+        title: '"У меня специфичная ниша, AI не разберётся"',
+        answer: 'AI анализирует вашу нишу и создаёт умные рубрики. Работает для юристов, психологов, фитнес-тренеров, строителей — любой профессии',
     },
     {
-        type: 'barrier',
-        icon: DollarSign,
-        title: '"Зачем платить?"',
-        answer: 'ChatGPT + Canva = 40 мин. Loom = 60 сек. Ваше время дороже',
+        type: 'concern',
+        icon: Shield,
+        title: '"Я потеряю контроль над контентом"',
+        answer: 'Вы редактируете перед публикацией. AI — это ассистент, а не замена. Полный контроль остаётся за вами',
     },
+    // Блок 2: Альтернативы
     {
-        type: 'competitor',
+        type: 'alternative',
         icon: Users,
-        title: 'VS Нанять SMM-щика',
-        answer: 'Loom = стоимость 1 часа работы, но создаёт контент 24/7',
+        title: 'Нанять SMM-специалиста',
+        answer: 'Месяц работы Loom значительно дешевле зарплаты SMM. AI работает 24/7 и создаёт контент мгновенно. Также инструмент разгружает специалиста от рутины — он сможет сфокусироваться на стратегии',
     },
     {
-        type: 'competitor',
-        icon: Repeat,
-        title: 'VS Делать в Canva',
-        answer: 'Переключение между 4 инструментами vs один клик в Loom',
+        type: 'alternative',
+        icon: Zap,
+        title: 'ChatGPT + Canva + планировщик',
+        answer: '4 инструмента, 40 минут на пост, ручная адаптация под каждую соцсеть. Loom = 1 клик, 60 секунд, автоадаптация. При этом система использует лучшие практики работы с AI и контентом',
     },
     {
-        type: 'competitor',
+        type: 'alternative',
         icon: TrendingUp,
-        title: 'VS Не вести соцсети',
-        answer: 'Конкуренты забирают клиентов. Loom = 5 минут = поток лидов',
+        title: 'Не вести соцсети вообще',
+        answer: 'Ваши конкуренты постят каждый день и забирают клиентов. С Loom: 5 минут = месяц контента = поток лидов',
     },
 ];
 
@@ -48,10 +50,10 @@ export const ObjectionsSection = () => {
                 <SlideUp>
                     <div className={styles.header}>
                         <h2 className={styles.title}>
-                            Почему именно Loom?
+                            Что вас останавливает?
                         </h2>
                         <p className={styles.subtitle}>
-                            Отвечаем на частые сомнения и сравниваем с альтернативами
+                            Разбираем реальные сомнения и честно сравниваем с альтернативами
                         </p>
                     </div>
                 </SlideUp>
