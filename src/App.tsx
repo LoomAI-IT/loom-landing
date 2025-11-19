@@ -1,8 +1,11 @@
 import {
   HeroSection,
   MicroJobsSection,
+  PainPointsSection,
   TryNowSection,
   FeaturesSection,
+  ObjectionsSection,
+  BenefitsSection,
   FinalCTASection,
 } from './components/sections';
 
@@ -11,8 +14,11 @@ function App() {
     <main>
       <HeroSection />
       <MicroJobsSection />
+      <PainPointsSection />
       <TryNowSection />
       <FeaturesSection />
+      <ObjectionsSection />
+      <BenefitsSection />
       <FinalCTASection />
     </main>
   );
