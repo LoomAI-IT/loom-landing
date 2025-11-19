@@ -1,37 +1,37 @@
-import {Zap, Palette, Wand2, Smartphone, ImageIcon, Send} from 'lucide-react';
+import {Zap, Palette, ImageIcon, Send, Users, Globe} from 'lucide-react';
 import {Section, Container, Card, SlideUp, StaggerContainer, StaggerItem} from '../../ui';
 import styles from './FeaturesSection.module.css';
 
 const features = [
     {
-        icon: Zap,
-        title: 'Генерация текста + фото за 60 секунд',
-        value: 'Ценность: Пост за 60 секунд — без подбора слов',
-    },
-    {
         icon: Palette,
-        title: '5 профессиональных рубрик на выбор',
-        value: 'Ценность: Всегда знаете ЧТО писать — без ступора',
-    },
-    {
-        icon: Wand2,
-        title: 'AI-редактор для доработки',
-        value: 'Ценность: "Добавь эмоций" — текст меняется моментально',
-    },
-    {
-        icon: Smartphone,
-        title: 'Адаптация под VK, Instagram, Telegram',
-        value: 'Ценность: Экономия 70% времени на адаптацию',
+        title: 'Умные рубрики для вашей ниши',
+        description: 'AI анализирует вашу тематику и предлагает рубрики, которые найдут отклик у аудитории — ваш контент всегда будет актуальным и разнообразным.',
     },
     {
         icon: ImageIcon,
-        title: 'AI-генерация или загрузка своих фото',
-        value: 'Ценность: Не нужен стоковый поиск или дизайнер',
+        title: 'AI-студия изображений',
+        description: 'Генерация визуалов, которые точно попадают в тему поста — не нужно искать стоки или ждать дизайнера.',
+    },
+    {
+        icon: Users,
+        title: 'Доступ для всей команды',
+        description: 'Создавать посты могут не только SMM-специалисты — дайте доступ сотрудникам, которые знают продукт изнутри.',
+    },
+    {
+        icon: Zap,
+        title: 'Готовый пост за пару кликов',
+        description: 'От идеи до финального варианта — несколько секунд. Текст, изображение и форматирование готовы к публикации.',
     },
     {
         icon: Send,
-        title: 'Публикация напрямую в соцсети',
-        value: 'Ценность: От идеи до поста — один клик',
+        title: 'Публикация во все соцсети одним кликом',
+        description: 'Адаптация под VK, Instagram, Telegram автоматически — экономьте часы на переделке одного и того же поста.',
+    },
+    {
+        icon: Globe,
+        title: 'Проверка фактов через интернет',
+        description: 'AI обращается к актуальным источникам, чтобы ваш контент был точным и достоверным — никаких устаревших данных.',
     },
 ];
 
@@ -42,7 +42,7 @@ export const FeaturesSection = () => {
                 <SlideUp>
                     <div className={styles.header}>
                         <h2 className={styles.title}>
-                            Как Loom помогает поддерживать активность и экспертность?
+                            Как Loom помогает создавать профессиональный контент?
                         </h2>
                     </div>
                 </SlideUp>
@@ -62,7 +62,7 @@ export const FeaturesSection = () => {
                                             <Icon size={28} strokeWidth={1.5}/>
                                         </div>
                                         <h3 className={styles.cardTitle}>{feature.title}</h3>
-                                        <p className={styles.cardValue}>{feature.value}</p>
+                                        <p className={styles.cardDescription}>{feature.description}</p>
                                     </Card>
                                 </StaggerItem>
                             );
