@@ -241,6 +241,18 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
+    .title {
+        font-size: var(--text-3xl);
+    }
+
+    .endpointLabel {
+        font-size: 17px;
+    }
+
+    .featureTitle {
+        font-size: 17px;
+    }
+
     .diagram {
         grid-template-columns: 1fr;
         gap: var(--spacing-6);
@@ -262,6 +274,22 @@
 }
 
 @media (max-width: 768px) {
+    .title {
+        font-size: var(--text-3xl);
+    }
+
+    .subtitle {
+        font-size: var(--text-base);
+    }
+
+    .featureTitle {
+        font-size: var(--text-base);
+    }
+
+    .featureDescription {
+        font-size: var(--text-sm);
+    }
+
     .header {
         margin-bottom: var(--spacing-12);
     }
@@ -276,14 +304,6 @@
 
     .features {
         gap: var(--spacing-3);
-    }
-
-    .featureTitle {
-        font-size: var(--text-base);
-    }
-
-    .featureDescription {
-        font-size: var(--text-sm);
     }
 
     .featureNode:hover {
@@ -418,7 +438,7 @@
     }
 
     .statusBadge {
-        font-size: 0.625rem;
+        font-size: 10px;
         padding: 0.125rem var(--spacing-1);
     }
 }

@@ -195,7 +195,25 @@
     font-size: var(--text-sm);
 }
 
+@media (max-width: 1024px) {
+    .title {
+        font-size: var(--text-3xl);
+    }
+}
+
 @media (max-width: 768px) {
+    .title {
+        font-size: var(--text-3xl);
+    }
+
+    .subtitle {
+        font-size: var(--text-base);
+    }
+
+    .label {
+        font-size: var(--text-sm);
+    }
+
     .header {
         margin-bottom: var(--spacing-10);
     }

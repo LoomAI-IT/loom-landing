@@ -51,7 +51,29 @@
     margin: 0;
 }
 
+@media (max-width: 1024px) {
+    .title {
+        font-size: var(--text-3xl);
+    }
+
+    .cardTitle {
+        font-size: 17px;
+    }
+}
+
 @media (max-width: 768px) {
+    .title {
+        font-size: var(--text-3xl);
+    }
+
+    .cardTitle {
+        font-size: var(--text-base);
+    }
+
+    .cardDescription {
+        font-size: var(--text-sm);
+    }
+
     .grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-5);
