@@ -200,7 +200,7 @@
 }
 
 .featureTitle {
-    font-size: var(--text-base);
+    font-size: var(--text-lg);
     font-weight: var(--font-semibold);
     color: var(--color-text-primary);
     flex: 1;
@@ -234,7 +234,7 @@
 }
 
 .featureDescription {
-    font-size: var(--text-sm);
+    font-size: var(--text-base);
     color: var(--color-text-secondary);
     line-height: var(--leading-relaxed);
 }
@@ -276,6 +276,14 @@
 
     .features {
         gap: var(--spacing-3);
+    }
+
+    .featureTitle {
+        font-size: var(--text-base);
+    }
+
+    .featureDescription {
+        font-size: var(--text-sm);
     }
 
     .featureNode:hover {
@@ -402,7 +410,7 @@
     }
 
     .featureDescription {
-        font-size: var(--text-xs);
+        font-size: var(--text-sm);
     }
 
     .featureNode:hover {

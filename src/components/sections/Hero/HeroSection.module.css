@@ -39,7 +39,7 @@
 }
 
 .subtitle {
-    font-size: var(--text-xl);
+    font-size: var(--text-lg);
     line-height: var(--leading-relaxed);
     color: var(--color-text-secondary);
     max-width: 540px;
@@ -271,10 +271,6 @@
 @media (max-width: 480px) {
     .textContent {
         gap: var(--spacing-4);
-    }
-
-    .subtitle {
-        font-size: var(--text-lg);
     }
 
     .stats {

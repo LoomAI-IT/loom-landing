@@ -5,26 +5,32 @@ import styles from './PainPointsSection.module.css';
 const painPoints = [
     {
         icon: Clock,
+        title: 'Нет времени на контент',
         text: 'Открываете Telegram — "надо запостить", но закрываете. Нет времени.',
     },
     {
         icon: TrendingDown,
+        title: 'Отставание от конкурентов',
         text: 'Конкуренты постят каждый день, а у вас 1 пост в неделю.',
     },
     {
         icon: Frown,
+        title: 'Непрофессиональный вид',
         text: 'Стыдно показывать соцсети клиентам — там пусто или непрофессионально.',
     },
     {
         icon: Timer,
+        title: 'Время уходит не туда',
         text: 'Контент съедает время, которое можно потратить на продажи.',
     },
     {
         icon: Users,
+        title: 'Бизнес требует внимания',
         text: 'Весь день в делах бизнеса — на посты времени не остаётся.',
     },
     {
         icon: MessageSquare,
+        title: 'SMM-специалист перегружен',
         text: 'SMM-специалист тонет в рутине вместо стратегии.',
     },
 ];
@@ -56,6 +62,7 @@ export const PainPointsSection = () => {
                                     <div className={styles.iconWrapper}>
                                         <point.icon size={24} strokeWidth={1.5} />
                                     </div>
+                                    <h3 className={styles.cardTitle}>{point.title}</h3>
                                     <p className={styles.text}>{point.text}</p>
                                 </Card>
                             </StaggerItem>
