@@ -5,7 +5,7 @@ import {
     TryNowSection,
     FeaturesSection,
     ObjectionsSection,
-    BenefitsSection,
+    TransformationSection,
     FinalCTASection,
 } from './components/sections';
 
@@ -18,7 +18,7 @@ function App() {
             <TryNowSection/>
             <FeaturesSection/>
             <ObjectionsSection/>
-            <BenefitsSection/>
+            <TransformationSection/>
             <FinalCTASection/>
         </main>
     );
