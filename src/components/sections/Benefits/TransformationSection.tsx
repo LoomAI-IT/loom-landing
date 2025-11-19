@@ -20,7 +20,7 @@ const transformations: Transformation[] = [
         icon: Calendar,
         title: 'Регулярность публикаций',
         before: '2-3 поста в месяц, когда есть вдохновение',
-        after: '15-20 качественных постов каждый месяц'
+        after: '∞ качественных постов каждый месяц'
     },
     {
         icon: Award,

@@ -14,7 +14,7 @@ export const TryNowSection = () => {
     };
 
     return (
-        <Section spacing="lg">
+        <Section spacing="lg" id="trynow">
             <Container size="narrow">
                 <SlideUp>
                     <div className={styles.header}>

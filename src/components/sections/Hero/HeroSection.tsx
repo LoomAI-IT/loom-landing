@@ -4,6 +4,11 @@ import {Section, Container, Button} from '../../ui';
 import styles from './HeroSection.module.css';
 
 export const HeroSection = () => {
+    const scrollToTryNow = () => {
+        const element = document.getElementById('trynow');
+        element?.scrollIntoView({behavior: 'smooth', block: 'start'});
+    };
+
     return (
         <Section spacing="lg" className={styles.hero}>
             <Container>
@@ -46,7 +51,7 @@ export const HeroSection = () => {
                             <Button size="lg">
                                 Начать бесплатное внедрение Loom
                             </Button>
-                            <Button size="lg" variant="ghost">
+                            <Button size="lg" variant="ghost" onClick={scrollToTryNow}>
                                 Посмотреть как это работает
                             </Button>
                         </motion.div>

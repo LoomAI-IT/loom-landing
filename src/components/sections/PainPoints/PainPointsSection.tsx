@@ -5,7 +5,7 @@ import styles from './PainPointsSection.module.css';
 const painPoints = [
     {
         icon: Clock,
-        text: 'Открываете Instagram — "надо запостить", но закрываете. Нет времени.',
+        text: 'Открываете Telegram — "надо запостить", но закрываете. Нет времени.',
     },
     {
         icon: TrendingDown,
