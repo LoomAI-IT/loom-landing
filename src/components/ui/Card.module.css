@@ -1,56 +1,56 @@
 .card {
-  border-radius: var(--radius-xl);
-  transition: all var(--transition-base);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-base);
 }
 
 /* Variants */
 .default {
-  background-color: var(--color-bg);
+    background-color: var(--color-bg);
 }
 
 .bordered {
-  background-color: var(--color-bg);
-  border: 1px solid var(--color-border);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
 }
 
 .elevated {
-  background-color: var(--color-bg);
-  box-shadow: var(--shadow-md);
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow-md);
 }
 
 /* Padding */
 .padding-sm {
-  padding: var(--spacing-4);
+    padding: var(--spacing-4);
 }
 
 .padding-md {
-  padding: var(--spacing-6);
+    padding: var(--spacing-6);
 }
 
 .padding-lg {
-  padding: var(--spacing-8);
+    padding: var(--spacing-8);
 }
 
 /* Hover effect */
 .hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .hover:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
 }
 
 .hover:active {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
-  .padding-md {
-    padding: var(--spacing-5);
-  }
+    .padding-md {
+        padding: var(--spacing-5);
+    }
 
-  .padding-lg {
-    padding: var(--spacing-6);
-  }
+    .padding-lg {
+        padding: var(--spacing-6);
+    }
 }

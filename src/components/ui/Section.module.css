@@ -1,49 +1,49 @@
 .section {
-  width: 100%;
+    width: 100%;
 }
 
 /* Background variants */
 .default {
-  background-color: var(--color-bg);
+    background-color: var(--color-bg);
 }
 
 .secondary {
-  background-color: var(--color-bg-secondary);
+    background-color: var(--color-bg-secondary);
 }
 
 .tertiary {
-  background-color: var(--color-bg-tertiary);
+    background-color: var(--color-bg-tertiary);
 }
 
 /* Spacing variants */
 .sm {
-  padding-top: var(--spacing-16);
-  padding-bottom: var(--spacing-16);
+    padding-top: var(--spacing-16);
+    padding-bottom: var(--spacing-16);
 }
 
 .md {
-  padding-top: var(--spacing-24);
-  padding-bottom: var(--spacing-24);
+    padding-top: var(--spacing-24);
+    padding-bottom: var(--spacing-24);
 }
 
 .lg {
-  padding-top: var(--spacing-32);
-  padding-bottom: var(--spacing-32);
+    padding-top: var(--spacing-32);
+    padding-bottom: var(--spacing-32);
 }
 
 @media (max-width: 768px) {
-  .sm {
-    padding-top: var(--spacing-12);
-    padding-bottom: var(--spacing-12);
-  }
+    .sm {
+        padding-top: var(--spacing-12);
+        padding-bottom: var(--spacing-12);
+    }
 
-  .md {
-    padding-top: var(--spacing-16);
-    padding-bottom: var(--spacing-16);
-  }
+    .md {
+        padding-top: var(--spacing-16);
+        padding-bottom: var(--spacing-16);
+    }
 
-  .lg {
-    padding-top: var(--spacing-20);
-    padding-bottom: var(--spacing-20);
-  }
+    .lg {
+        padding-top: var(--spacing-20);
+        padding-bottom: var(--spacing-20);
+    }
 }
