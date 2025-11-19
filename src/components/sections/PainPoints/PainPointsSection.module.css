@@ -39,9 +39,15 @@
     transform: translateY(-2px);
 }
 
-.emoji {
-    font-size: 2.5rem;
-    line-height: 1;
+.iconWrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+    border-radius: var(--radius-lg);
     margin-bottom: var(--spacing-2);
 }
 
@@ -59,9 +65,5 @@
 
     .header {
         margin-bottom: var(--spacing-12);
-    }
-
-    .emoji {
-        font-size: 2rem;
     }
 }

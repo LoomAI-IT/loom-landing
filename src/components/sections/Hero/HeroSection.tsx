@@ -44,7 +44,7 @@ export const HeroSection = () => {
                             className={styles.cta}
                         >
                             <Button size="lg">
-                                Начать внедрение Loom
+                                Начать бесплатное внедрение Loom
                             </Button>
                             <Button size="lg" variant="ghost">
                                 Посмотреть как это работает

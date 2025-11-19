@@ -5,32 +5,26 @@ import styles from './PainPointsSection.module.css';
 const painPoints = [
     {
         icon: Clock,
-        emoji: '⏰',
         text: 'Открываете Instagram — "надо запостить", но закрываете. Нет времени.',
     },
     {
         icon: TrendingDown,
-        emoji: '📉',
         text: 'Конкуренты постят каждый день, а у вас 1 пост в неделю.',
     },
     {
         icon: Frown,
-        emoji: '😰',
         text: 'Стыдно показывать соцсети клиентам — там пусто или непрофессионально.',
     },
     {
         icon: Timer,
-        emoji: '😤',
         text: 'Контент съедает время, которое можно потратить на продажи.',
     },
     {
         icon: Users,
-        emoji: '❌',
         text: 'Весь день в делах бизнеса — на посты времени не остаётся.',
     },
     {
         icon: MessageSquare,
-        emoji: '⚙️',
         text: 'SMM-специалист тонет в рутине вместо стратегии.',
     },
 ];
@@ -59,7 +53,9 @@ export const PainPointsSection = () => {
                                     padding="lg"
                                     className={styles.card}
                                 >
-                                    <div className={styles.emoji}>{point.emoji}</div>
+                                    <div className={styles.iconWrapper}>
+                                        <point.icon size={24} strokeWidth={1.5} />
+                                    </div>
                                     <p className={styles.text}>{point.text}</p>
                                 </Card>
                             </StaggerItem>
