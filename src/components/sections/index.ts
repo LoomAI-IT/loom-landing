@@ -1,8 +1,13 @@
-export { HeroSection } from './HeroSection';
-export { MicroJobsSection } from './MicroJobsSection';
-export { PainPointsSection } from './PainPointsSection';
-export { TryNowSection } from './TryNowSection';
-export { FeaturesSection } from './FeaturesSection';
-export { ObjectionsSection } from './ObjectionsSection';
-export { BenefitsSection } from './BenefitsSection';
-export { FinalCTASection } from './FinalCTASection';
+/**
+ * Landing page sections
+ * Organized in isolated folders for better maintainability
+ */
+
+export { HeroSection } from './Hero';
+export { FeaturesSection } from './Features';
+export { BenefitsSection } from './Benefits';
+export { MicroJobsSection } from './MicroJobs';
+export { PainPointsSection } from './PainPoints';
+export { ObjectionsSection } from './Objections';
+export { TryNowSection } from './TryNow';
+export { FinalCTASection } from './FinalCTA';

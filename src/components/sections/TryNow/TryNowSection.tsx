@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Wand2, Image, Hash } from 'lucide-react';
-import { Section, Container, Button, Card, SlideUp } from '../ui';
+import { Section, Container, Button, Card, SlideUp } from '../../ui';
 import styles from './TryNowSection.module.css';
 
 const TOPICS = ['Кейс клиента', 'Экспертное мнение', 'Анонс акции', 'Ответ на вопрос'];

@@ -1,5 +1,5 @@
 import { Lightbulb, TrendingUp, Megaphone, HelpCircle, ShieldAlert } from 'lucide-react';
-import { Section, Container, Card, SlideUp, StaggerContainer, StaggerItem } from '../ui';
+import { Section, Container, Card, SlideUp, StaggerContainer, StaggerItem } from '../../ui';
 import styles from './MicroJobsSection.module.css';
 
 const microJobs = [

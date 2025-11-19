@@ -1,4 +1,4 @@
-import { ReactNode, HTMLAttributes } from 'react';
+import { type ReactNode, type HTMLAttributes } from 'react';
 import clsx from 'clsx';
 import styles from './Container.module.css';
 

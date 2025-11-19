@@ -1,5 +1,5 @@
 import { Clock, TrendingDown, Frown, Timer, Users, MessageSquare } from 'lucide-react';
-import { Section, Container, Card, SlideUp, StaggerContainer, StaggerItem } from '../ui';
+import { Section, Container, Card, SlideUp, StaggerContainer, StaggerItem } from '../../ui';
 import styles from './PainPointsSection.module.css';
 
 const painPoints = [

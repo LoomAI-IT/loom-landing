@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Section, Container, Button } from '../ui';
+import { Section, Container, Button } from '../../ui';
 import styles from './FinalCTASection.module.css';
 
 export const FinalCTASection = () => {

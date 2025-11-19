@@ -1,5 +1,5 @@
 import { ShieldCheck, Zap, DollarSign, Users, Repeat, TrendingUp } from 'lucide-react';
-import { Section, Container, Card, SlideUp, StaggerContainer, StaggerItem } from '../ui';
+import { Section, Container, Card, SlideUp, StaggerContainer, StaggerItem } from '../../ui';
 import styles from './ObjectionsSection.module.css';
 
 const objections = [

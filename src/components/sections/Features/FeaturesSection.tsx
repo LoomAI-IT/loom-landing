@@ -1,5 +1,5 @@
 import { Zap, Palette, Wand2, Smartphone, ImageIcon, Send } from 'lucide-react';
-import { Section, Container, Card, SlideUp, StaggerContainer, StaggerItem } from '../ui';
+import { Section, Container, Card, SlideUp, StaggerContainer, StaggerItem } from '../../ui';
 import styles from './FeaturesSection.module.css';
 
 const features = [

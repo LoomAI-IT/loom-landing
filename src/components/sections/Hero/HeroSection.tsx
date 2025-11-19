@@ -1,6 +1,6 @@
 import { Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Section, Container, Button } from '../ui';
+import { Section, Container, Button } from '../../ui';
 import styles from './HeroSection.module.css';
 
 export const HeroSection = () => {
